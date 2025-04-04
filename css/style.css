@@ -567,3 +567,43 @@ display: none;
     font-size: 16px;
     color: #666;
 }
+
+/*Portfolio */
+.portfolio .container {
+    padding-bottom: 40px;
+}
+
+.portfolio .portfolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-heading h2 {
+    color: var(--text-black-900);  /* Fixed typo in variable name */
+    font-weight: 500;
+}
+
+.portfolio-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+.portfolio-item-inner:hover {
+    transform: scale(1.05);
+    border-color: var(--skin-color); /* Or use any highlight color */
+}
+
+
+.portfolio-item-inner {
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.portfolio-item-inner .portfolio-img img {
+    width: 100%;
+    display: block;
+    height: 250px;
+}
