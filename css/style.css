@@ -53,6 +53,7 @@ ul {
 
 .container {
     max-width: 1100px;
+   
     width: 100%;
     margin: auto;
 }
@@ -209,7 +210,7 @@ ul {
     display: flex;
     color:var(--text-black-900);
 }
-.home .home-info {
+ .home-info {
     flex:0 0 60%;
     max-width: 60%;
 }
@@ -238,7 +239,7 @@ h3.my-profession{
     font-size:20px;
     color :var(--text-black-700)
 }
-.home .hime-img img{
+.home-img img{
    flex:0 0 40%;
    max-width:40%;
    text-align:center;
@@ -248,8 +249,8 @@ h3.my-profession{
 .home-img::after{
     content :" ";
     position:absolute;
-    width:80px;
-    height:80px;
+    width:20px;
+    height:20px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right:20px;
@@ -262,11 +263,11 @@ h3.my-profession{
     height:80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left:620px;
+    left:-20px;
     top:-40px;
 }
 .home .home-img img {
-    height: 400px;
+    height: 40px;
     margin:auto;
     border-radius:5px;
 }
@@ -282,6 +283,7 @@ display: none;
 .section-title{
   flex:0 0  100%;
   max-width:100%;
+  margin-bottom:60px;
  }
  .section-title h2{
     font-size: 40px;
@@ -308,4 +310,157 @@ display: none;
     left:0;
     margin-top: 8px; ;
  }
+  
+ .about .about-content{
+    flex:0 0 100%;
+    max-width:100%;
+ }
+
+ .about .about-content .about-text
+ {
+    flex:0 0 100%;
+    max-width:100%;
+ } 
+.about .about-content .about-text h3{
+    font-size:24px;
+    margin-bottom: 15px;
+    font-weight:700;
+    color:var(--text-black-900);
+}
+.about .about-content .about-text p{
+    font-size:16px;
+    line-height:25px; 
+    color:var(--text-black-700);
+}
+.about .about-content .about-text h3 span{
+    
+    color:var(--skin-color);
+}
+.about .about-content .personal-info {
+    flex :0 0 50%;
+    max-width:60%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info  .info-item {
+    flex:0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .personal-info  .info-item p{
+   font-weight: 600;
+   padding: 10px 0;
+   font-size: 16px;
+   color:var(--text-black-900);
+   border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info  .info-item p span{
+   font-weight: 400;
+   color:var(--text-black-700);
+   margin-left: 4px;
+   display: inline-block;
+   
+}
+
+/* Skills Section Styling */
+.skills {
+    margin-top: 40px;
+}
+
+.skills .section-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--text-black-900);
+}
+
+.skills .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-item {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive grid */
+    background: var(--black-10);
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-item h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-black-700);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.center-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+ /* Timeline Container */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 3px solid var(--skin-color);
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color:var(--skin-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
 
