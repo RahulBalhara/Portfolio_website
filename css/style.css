@@ -53,7 +53,6 @@ ul {
 
 .container {
     max-width: 1100px;
-   
     width: 100%;
     margin: auto;
 }
@@ -205,6 +204,7 @@ ul {
 .aside .nav li a.active {
     color: var(--skin-color);
 }
+/* Home*/
 .home{
     min-height: 100vh;
     display: flex;
@@ -239,18 +239,18 @@ h3.my-profession{
     font-size:20px;
     color :var(--text-black-700)
 }
-.home-img img{
+.home .home-img
+{
    flex:0 0 40%;
    max-width:40%;
-   text-align:center;
-   position:relative;
+   
 }  
 
 .home-img::after{
     content :" ";
     position:absolute;
-    width:20px;
-    height:20px;
+    width:80px;
+    height:80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right:20px;
@@ -263,11 +263,11 @@ h3.my-profession{
     height:80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left:-20px;
+    left:610px;
     top:-40px;
 }
 .home .home-img img {
-    height: 40px;
+    height: 400px;
     margin:auto;
     border-radius:5px;
 }
