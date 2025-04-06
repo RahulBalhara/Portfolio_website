@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  
   <title>Rahul Balhara | Front-end Developer</title>
   <link
     rel="stylesheet"
@@ -19,9 +17,6 @@
   <link rel="stylesheet" href="./css/skins/color-5.css" class="alternative-style" title="color-5" disabled />
 
 
-
-
-
 </head>
 
 <body>
@@ -33,23 +28,23 @@
       </div>
       <div class="nav-toggler"><span></span></div>
       <ul class="nav">
-        <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-        <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-        <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
       </ul>
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div class="main-content" >
       <!-- Home Section -->
-      <section class="home ">
+      <section class="home section " id="home">
         <div class="container">
           <div class="row">
             <div class="home-info padd-15">
               <h3 class="hello">Hello, my name is <span>Rahul Balhara</span></h3>
-              <h3 class="my-profession">I'm a <span class="typing"> Front-end Developer</span></h3>
+              <h3 class="my-profession">I'm  <span class="typing"> Front-end Developer</span></h3>
               <p>
                 I am a passionate Front-end Developer with a strong foundation in modern web technologies. I specialize in building dynamic, visually appealing, and highly responsive websites and more...
               </p>
@@ -63,7 +58,7 @@
       </section>
 
       <!-- About Section -->
-      <section class="about section  ">
+      <section class="about section "id="about">
         <div class="container">
           <div class="row">
             <div class="title padd-15">
@@ -189,7 +184,7 @@
         </div>
       </section>
       <!-- service section-->
-      <section class="service section" >
+      <section class="service section" id="services">
         <div class="container" >
         
             <div class="title padd-15">
@@ -237,7 +232,7 @@
         </div>
       </section>
       <!--Portfolio section-->
-      <section class="portfolio section">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="title padd-15">
@@ -366,27 +361,25 @@
     </form>
   </div>
 </section>
+    </div>      
+  </div>
+  
+  <div class="style-switcher ">
+    <div class="style-switcher-toggler s-icon" >
+      <i class="fas fa-cog fa-spin"></i>
     </div>
+  
+  <h4> Theme Colors</h4>
+  <div class="colors">
+    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
   </div>
-
-<div class="style-switcher">
-  <div class="style-switcher-toggler s-icon" >
-    <i class="fas fa-cog fa-spin"></i>
   </div>
-
-<div class="day-night s-icon">
-  <i class="fas fa-moon"></i>
-</div>
-<h4> Theme Colors</h4>
-<div class="colors">
-  <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-  <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-  <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-  <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-  <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-</div>
-</div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/style-switcher.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

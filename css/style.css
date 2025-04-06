@@ -16,6 +16,15 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
+/* body.dark{
+  --bg-black-900:#151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #39584380;
+  --text-black-900: #ffffff;
+  --text-black-700: #e6e6e6;
+
+} */
+
 
 * {
     margin: 0;
@@ -915,4 +924,3 @@ display: none;
     justify-content: center;
     align-items: center;
   }
-  
